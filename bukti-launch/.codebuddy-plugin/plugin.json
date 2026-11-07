@@ -1,0 +1,106 @@
+{
+  "name": "bukti-launch",
+  "version": "1.0.1",
+  "description": "Evidence-gated launch copywriting team: the lead builds a fact ledger from the source manifest, brief and rules and triages unsupported claims into delete/replace/escalate; the writer drafts only from authorized facts with complete claim-to-source citations; the reviewer issues canonical verdicts (PASS, PASS_WITH_NOTES, REVISE, ESCALATE) and never passes a factual claim whose citation is incomplete, within a strict 3-review-pass budget",
+  "author": {
+    "name": "BuktiLaunch"
+  },
+  "agents": [
+    "./agents/bukti-launch-team-lead.md",
+    "./agents/evidence-writer.md",
+    "./agents/proof-reviewer.md"
+  ],
+  "expertType": "team",
+  "agentName": "bukti-launch-team-lead",
+  "teamInfo": {
+    "leadAgent": "bukti-launch-team-lead",
+    "memberAgents": [
+      "evidence-writer",
+      "proof-reviewer"
+    ]
+  },
+  "displayName": {
+    "en": "BuktiLaunch",
+    "zh": "BuktiLaunch 证据文案团队"
+  },
+  "profession": {
+    "en": "BuktiLaunch",
+    "zh": "BuktiLaunch 证据文案团队"
+  },
+  "displayDescription": {
+    "en": "Three-role evidence-gated launch copy pipeline: the lead builds a fact ledger and format plan, the writer drafts only from authorized facts with claim-to-source mapping, and the reviewer audits sources, facts, tone, advertising rules and halal applicability, with at most 3 review passes before human escalation",
+    "zh": "证据文案团队：主理人建事实台账，撰写师仅凭授权事实成稿，审核师核查来源、语气、广告与清真适用性。"
+  },
+  "categoryId": "06-ContentCreative",
+  "defaultInitPrompt": {
+    "zh": "请依据我的来源清单、brief 和规则，先建事实台账，再按格式撰写带证据映射的发布文案",
+    "en": "Read my source manifest, brief and rules; build the fact ledger first, then draft per format with claim-to-source mapping"
+  },
+  "plugin": "bukti-launch",
+  "tags": [
+    {
+      "en": "Evidence-Based Copy",
+      "zh": "实据文案"
+    },
+    {
+      "en": "Source Traceability",
+      "zh": "来源溯源"
+    },
+    {
+      "en": "Halal Compliance",
+      "zh": "清真合规"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Read my source manifest, brief and rules; build the fact ledger first, then draft per format with claim-to-source mapping",
+      "zh": "请依据我的来源清单、brief 和规则，先建事实台账，再按格式撰写带证据映射的发布文案"
+    },
+    {
+      "en": "Build a fact ledger from my sources and flag missing or conflicting evidence",
+      "zh": "从我的来源构建事实台账，标记缺失与冲突证据"
+    },
+    {
+      "en": "Audit this existing draft against sources, tone, advertising rules and halal applicability",
+      "zh": "对照来源、语气、广告规则与清真适用性，审查这份已有草稿"
+    }
+  ],
+  "members": [
+    {
+      "id": "bukti-launch-team-lead",
+      "displayName": {
+        "en": "Pranata",
+        "zh": "普拉纳塔"
+      },
+      "profession": {
+        "en": "Evidence-Gated Launch Editor",
+        "zh": "证据把关主编"
+      },
+      "role": "lead"
+    },
+    {
+      "id": "evidence-writer",
+      "displayName": {
+        "en": "Carita",
+        "zh": "卡丽塔"
+      },
+      "profession": {
+        "en": "Fact-Bound Copywriter",
+        "zh": "实据文案撰写师"
+      },
+      "role": "member"
+    },
+    {
+      "id": "proof-reviewer",
+      "displayName": {
+        "en": "Waskita",
+        "zh": "瓦斯基塔"
+      },
+      "profession": {
+        "en": "Halal Compliance Reviewer",
+        "zh": "清真合规审核师"
+      },
+      "role": "member"
+    }
+  ]
+}
