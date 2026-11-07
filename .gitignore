@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.env
+.env.*
+*.pem
+*.key
+*.log
+*.zip
+/runs/*
+!/runs/controller.py
+/tests/tmp/
+/ui/data.js
+/inputs/
+/sources/
+/evidence/
+/submission/
