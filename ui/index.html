@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BuktiLaunch — Meja peninjauan</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="data.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Langsung ke konten</a>
+<header class="masthead"><a class="wordmark" href="index.html" aria-label="BuktiLaunch beranda"><span class="mark" aria-hidden="true">b.</span>BuktiLaunch</a><span class="product-role">Meja peninjauan pemilik produk digital</span><span class="mode">Bukti tersimpan</span></header>
+<div class="workspace">
+<aside class="rail" aria-label="Ringkasan campaign">
+  <p class="rail-title">Campaign</p><h2>Kelas Excel<br>untuk Admin</h2><p id="campaign" class="small"></p>
+  <nav aria-label="Bagian peninjauan"><a href="#content">Konten & sumber</a><a href="#findings">Alasan penolakan</a><a href="#history">Riwayat proses</a></nav>
+  <div class="rail-note"><strong>Data fiktif</strong><p>Fixture untuk mendemonstrasikan pemeriksaan klaim. Belum dipublikasikan.</p></div>
+  <div class="roles"><span>Pranata <small>Planner</small></span><span>Carita <small>Writer</small></span><span>Waskita <small>Reviewer</small></span></div>
+</aside>
+<main id="main">
+  <section class="intro"><div><p class="context">Peluncuran produk digital</p><h1>Setiap klaim<br>punya asal.</h1><p class="lead">Periksa tulisan, cocokkan sumbernya, lalu ambil keputusan atas versi yang sama.</p></div><div class="status-panel"><span class="status-dot" aria-hidden="true"></span><strong id="status">Membaca bukti…</strong><span id="round"></span><p>Persetujuan manusia belum diberikan. Tidak ada publikasi dari layar ini.</p></div></section>
+  <div id="historical-alert" class="alert" hidden><strong>Demo historis memerlukan koreksi.</strong><span>Reviewer pernah meloloskan sitasi nama produk yang belum lengkap. Verdict lama ditampilkan sebagai riwayat; paket ini belum layak disetujui.</span></div>
+  <section class="workflow" aria-label="Urutan kerja"><span><b>Planner</b><small>Fakta & cakupan</small></span><i aria-hidden="true">→</i><span><b>Writer</b><small>Draft & perbaikan</small></span><i aria-hidden="true">→</i><span><b>Reviewer</b><small>Aturan & sumber</small></span><i aria-hidden="true">→</i><span class="human"><b>Kamu</b><small>Tinjau versi final</small></span></section>
+  <section id="content" class="review-layout">
+    <div class="content-panel"><div class="section-bar"><h2>Konten hasil revisi</h2><span id="format-count"></span></div><div id="tabs" role="tablist" aria-label="Format konten"></div><div id="content-panel" role="tabpanel" tabindex="0"><pre id="copy"></pre></div><details class="file-info"><summary>Versi file & hash</summary><p id="file-path"></p><code id="file-hash"></code><p>Hash mengidentifikasi isi file ini. Hash tidak mengautentikasi orang yang menyetujui.</p></details></div>
+    <aside class="source-panel" aria-labelledby="source-heading"><div class="section-bar"><h2 id="source-heading">Bukti yang dipakai</h2></div><p class="small">Draft lama diperiksa sebagai masukan; fakta berasal dari dokumen sumber.</p><div id="sources"></div><p class="source-note">Halal: applicability dicatat per kategori. Pada fixture kursus ini tidak ada klaim halal.</p></aside>
+  </section>
+  <section id="findings" class="findings"><div class="section-bar"><div><p class="context">Review draft lama</p><h2>Yang ditolak, beserta alasannya.</h2></div><span id="finding-count" class="pill"></span></div><div id="finding-list"></div></section>
+  <section id="history" class="history"><div class="section-bar"><h2>Jejak keputusan</h2><span class="small">Dibaca dari state campaign</span></div><div class="table-wrap"><table><thead><tr><th scope="col">Waktu tercatat</th><th scope="col">Peristiwa</th><th scope="col">Putaran</th><th scope="col">Status</th></tr></thead><tbody id="events"></tbody></table></div></section>
+  <footer><strong>Tinjau sebelum menyetujui.</strong><p>Ini penampil artefak dari run WorkBuddy, bukan generator atau proses live. Persetujuan dilakukan terpisah oleh manusia. Data sumber dan rulebook yang berubah perlu diperiksa ulang.</p><a href="../README.md">Panduan kode sumber</a></footer>
+</main></div>
+</body></html>
